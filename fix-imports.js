@@ -24,6 +24,9 @@ async function fixImports() {
         // Fix lucide-react imports with version numbers
         content = content.replace(/lucide-react@\d+\.\d+\.\d+/g, 'lucide-react');
         
+        // Fix class-variance-authority imports with version numbers
+        content = content.replace(/class-variance-authority@\d+\.\d+\.\d+/g, 'class-variance-authority');
+        
         await writeFile(filePath, content);
         console.log(`Fixed imports in ${file}`);
       }

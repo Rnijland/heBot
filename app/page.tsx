@@ -1037,18 +1037,10 @@ export default function HomePage() {
                   width={120}
                   height={60}
                   className="h-12 w-auto object-contain"
+                  priority
                 />
               </div>
             ))}
-            <div className="flex-shrink-0">
-              <Image
-                src={bookimedBadge}
-                alt="Bookimed Badge"
-                width={120}
-                height={60}
-                className="h-12 w-auto object-contain"
-              />
-            </div>
           </div>
         </div>
       </section>

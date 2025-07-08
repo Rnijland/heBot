@@ -1,8 +1,8 @@
 {
   "framework": "nextjs",
-  "buildCommand": "npm run build",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
+  "buildCommand": "bash vercel-build.sh",
+  "devCommand": "pnpm run dev",
+  "installCommand": "pnpm install --force",
   "regions": ["sin1"],
   "functions": {
     "app/**/*.{js,ts,jsx,tsx}": {

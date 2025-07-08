@@ -27,6 +27,9 @@ async function fixImports() {
         // Fix class-variance-authority imports with version numbers
         content = content.replace(/class-variance-authority@\d+\.\d+\.\d+/g, 'class-variance-authority');
         
+        // Fix react-day-picker imports with version numbers
+        content = content.replace(/react-day-picker@\d+\.\d+\.\d+/g, 'react-day-picker');
+        
         await writeFile(filePath, content);
         console.log(`Fixed imports in ${file}`);
       }

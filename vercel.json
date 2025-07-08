@@ -2,7 +2,7 @@
   "framework": "nextjs",
   "buildCommand": "bash vercel-build.sh",
   "devCommand": "pnpm run dev",
-  "installCommand": "pnpm install --force",
+  "installCommand": "pnpm install --force --no-frozen-lockfile",
   "regions": ["sin1"],
   "functions": {
     "app/**/*.{js,ts,jsx,tsx}": {
